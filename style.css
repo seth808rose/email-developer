@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.section-center {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 1rem auto;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.274),
+    rgba(186, 204, 238, 0.9),
+    rgba(164, 177, 223, 0.4)
+  );
+}
+
+@media screen and (min-width: 780px) {
+  .section-center {
+    width: 60vw;
+  }
+}
+
+.nav-logo {
+  display: block;
+  text-align: center;
+  border-top: 2px double rgba(186, 204, 238, 0.9);
+  border-right: 2px double rgba(186, 204, 238, 0.9);
+  border-left: 2px double rgba(186, 204, 238, 0.9);
+  background: rgba(255, 255, 255, 0.945);
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+ul {
+  padding: 1rem;
+  border: 0.2px double rgba(186, 204, 238, 0.9);
+  display: flex;
+  justify-content: space-evenly;
+  /* background: rgba(204, 204, 245, 0.233); */
+  font-size: 15px;
+}
+
+ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.header {
+  display: block;
+  align-items: center;
+  text-align: center;
+  border: 0.2px double rgba(186, 204, 238, 0.9);
+  /* background: rgba(204, 204, 245, 0.233); */
+}
+
+.header-img {
+  height: 650px;
+  width: 450px;
+  margin-top: -6rem;
+  margin-bottom: -6rem;
+  object-fit: contain;
+  position: relative;
+  z-index: 100;
+  filter: drop-shadow(0 3px 3px black);
+}
+
+@media screen and (max-width: 600px) {
+  .header-img {
+    height: 500px;
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .header-pic::before {
+    content: "";
+    position: absolute;
+    border: 5px solid rgb(220, 48, 226);
+    height: 250px;
+    width: 400px;
+    right: 420px;
+    top: 455px;
+  }
+}
+
+header h1 {
+  font-size: 40px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background: white;
+}
+
+footer a {
+  color: black;
+  font-size: 20px;
+}
