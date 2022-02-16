@@ -63,6 +63,7 @@ ul li {
   text-align: center;
   border: 0.2px double rgba(186, 204, 238, 0.9);
   /* background: rgba(204, 204, 245, 0.233); */
+  height: 100%;
 }
 
 .header-img {
@@ -124,6 +125,20 @@ a {
   height: 2px;
   width: 100%;
   background: white;
+}
+
+footer {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.footer-text{
+  font-size: 10px;
+  
 }
 
 footer a {
